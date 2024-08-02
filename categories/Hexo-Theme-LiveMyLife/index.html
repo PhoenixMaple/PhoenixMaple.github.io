@@ -244,8 +244,6 @@
 
           
           
-          
-          
           <li>
             <a href="/archive/">
               
@@ -256,15 +254,6 @@
           </li>
           
           
-          
-          <li>
-            <a href="/categories/">
-              
-              分类
-              
-              
-            </a>
-          </li>
           
           
           
@@ -283,6 +272,17 @@
             <a href="/tags/">
               
               标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              分类
               
               
             </a>
@@ -478,21 +478,32 @@
       <!-- 归档列表 -->
       
       <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
+        <span class="fa fa-calendar-times-o listing-seperator" id="2024">
+          <span class="tag-text">2024</span>
         </span>
         <ul>
           
           <li>
-            04-17
+            08-01
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/en/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
+            <a href="/cn/npm常用指令/" style="color: #0085a1">
               <span>
-                Hexo-Theme-LiveMyLife
+                nvm常用指令
+                
+                -- cn
                 
               </span>
             </a>
           </li>
+          
+        </ul>
+      </div>
+      
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
+          <span class="tag-text">2020</span>
+        </span>
+        <ul>
           
           <li>
             04-17
@@ -502,6 +513,17 @@
                 Hexo-Theme-LiveMyLife
                 
                 -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            04-17
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/en/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
+              <span>
+                Hexo-Theme-LiveMyLife
                 
               </span>
             </a>
@@ -549,6 +571,10 @@
 <section>
   <h5><a href="/tags/">特色标签</a></h5>
   <div class="tags">
+    
+    
+    <a href="/tags/#nvm" title="nvm" rel="1">nvm</a>
+    
     
     
     <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="2">Hexo-Theme-LiveMyLife</a>
@@ -605,11 +631,15 @@
 <div class="widget">
   <ul>
     
-    <a href="../../cn/Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
+    <a href="../../cn/npm%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
+      <li>nvm常用指令</li>
     </a>
     
     <a href="../../en/Hexo-Theme-LiveMyLife/">
+      <li>Hexo-Theme-LiveMyLife</li>
+    </a>
+    
+    <a href="../../cn/Hexo-Theme-LiveMyLife/">
       <li>Hexo-Theme-LiveMyLife</li>
     </a>
     
@@ -641,7 +671,7 @@
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2020/04/">April 2020</a><span class="archive-list-count">2</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/08/">August 2024</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2020/04/">April 2020</a><span class="archive-list-count">2</span></li></ul>
 </div>
 
 
@@ -652,6 +682,10 @@
 <h5><a href="/categories/">categories</a></h5>
 <div class="widget">
   <ul>
+    
+    <a href="/categories/#笔记">
+      <li>笔记</li>
+    </a>
     
     <a href="/categories/#Hexo-Theme-LiveMyLife">
       <li>Hexo-Theme-LiveMyLife</li>
@@ -1137,5 +1171,20 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	</body>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>

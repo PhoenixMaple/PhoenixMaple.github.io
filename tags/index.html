@@ -244,8 +244,6 @@
 
           
           
-          
-          
           <li>
             <a href="/archive/">
               
@@ -256,15 +254,6 @@
           </li>
           
           
-          
-          <li>
-            <a href="/categories/">
-              
-              分类
-              
-              
-            </a>
-          </li>
           
           
           
@@ -283,6 +272,17 @@
             <a href="/tags/">
               
               标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              分类
               
               
             </a>
@@ -461,6 +461,8 @@
       <!-- 标签云 -->
       <div id='tag_cloud' class="tags">
         
+        <a href="#nvm" title="nvm" rel="1">nvm</a>
+        
         <a href="#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="2">Hexo-Theme-LiveMyLife</a>
         
       </div>
@@ -468,16 +470,34 @@
       <!-- 标签列表 -->
       
       <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="nvm">
+          <span class="tag-text">nvm</span>
+        </span>
+        
+        <div class="post-preview">
+          <a href="/cn/npm常用指令/">
+            <h2 class="post-title">
+              nvm常用指令
+              
+              -- cn
+              
+            </h2>
+            
+          </a>
+        </div>
+        <hr>
+        
+      </div>
+      
+      <div class="one-tag-list">
         <span class="fa fa-tag listing-seperator" id="Hexo-Theme-LiveMyLife">
           <span class="tag-text">Hexo-Theme-LiveMyLife</span>
         </span>
         
         <div class="post-preview">
-          <a href="/cn/Hexo-Theme-LiveMyLife/">
+          <a href="/en/Hexo-Theme-LiveMyLife/">
             <h2 class="post-title">
               Hexo-Theme-LiveMyLife
-              
-              -- cn
               
             </h2>
             
@@ -490,9 +510,11 @@
         <hr>
         
         <div class="post-preview">
-          <a href="/en/Hexo-Theme-LiveMyLife/">
+          <a href="/cn/Hexo-Theme-LiveMyLife/">
             <h2 class="post-title">
               Hexo-Theme-LiveMyLife
+              
+              -- cn
               
             </h2>
             
@@ -978,5 +1000,20 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	</body>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>
